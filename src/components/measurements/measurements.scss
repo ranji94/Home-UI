@@ -1,0 +1,70 @@
+@import '../../styles/main.scss';
+
+.measurements-container {
+    margin: {
+        left: 5vw;
+        right: 5vw;
+        top: 7vh;
+    }
+}
+
+.measurements-title {
+    color: $color-primary;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.measurements-panel {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: {
+        top: 5vh;
+        bottom: 5vh;
+    }
+}
+
+.measurements-add-button-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.measurements-refresh {
+    flex: 1;
+    display: flex;
+    justify-content: left;
+}
+
+.refresh-button {
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: $color-third;
+    color: $color-lead;
+    transition: background-color 0.2s;
+}
+
+.refresh-button:hover {
+    background-color: $color-secondary;
+}
+
+.measurement-add-button {
+    display: flex;
+    user-select: none;
+    cursor: pointer;
+    align-items: center;
+    color: $color-lead;
+    background-color: $color-third;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+}
+
+.measurement-add-button:hover {
+    background-color: $color-secondary;
+}
+
+.measurement-add-button-text {
+    padding-right: 5px;
+}

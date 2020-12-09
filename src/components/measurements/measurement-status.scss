@@ -1,0 +1,25 @@
+@mixin status-icon {
+    padding: 5px;
+    color: white;
+    border-radius: 50%;
+}
+
+.waiting-for-send {
+    @include status-icon;
+    background-color: #03a9f4;
+}
+
+.waiting-for-settlement {
+    @include status-icon;
+    background-color: #ffc107;
+}
+
+.not-paid {
+    @include status-icon;
+    background-color: #f44336;
+}
+
+.paid {
+    @include status-icon;
+    background-color: #4caf50;
+}

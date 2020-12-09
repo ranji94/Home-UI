@@ -1,0 +1,63 @@
+@import '../../styles/main.scss';
+
+.measurements-list {
+    border: 1px solid #efefef;
+}
+
+.list-headers {
+    border-bottom: 1px solid #efefef;
+    display: flex;
+    align-items: center;
+}
+
+.list-header-element {
+    user-select: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: {
+        top: 10px;
+        bottom: 10px;
+    }
+    color: grey;
+    text-transform: uppercase;
+    text-align: center;
+    flex: 1;
+
+    @include vertical-align;
+}
+
+.measurements-row {
+    padding: {
+        top: 3px;
+        bottom: 3px;
+    }
+    display: flex;
+    border-bottom: 1px solid #efefef;
+}
+
+.measurement-cell {
+    flex: 1;
+    text-align: center;
+
+    @include vertical-align;
+}
+
+.measurement-water-cell {
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+
+    @include vertical-align;
+}
+
+.hot-icon {
+    color: orange;
+}
+
+.cold-icon {
+    color: lightblue;
+}
+
+.energy-icon {
+    color: #ffe082;
+}
